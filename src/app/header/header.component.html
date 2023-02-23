@@ -1,0 +1,32 @@
+<nav class="navbar mynavbar py-1">
+    <div class="container px-5">
+        <a class="navbar-brand" routerLink="" (click)="onClickHome()">Mukesh Prajapati</a>
+        <ul class="navbar-nav d-flex flex-row gap-4">
+            <li class="nav-item">
+                <a class="nav-link" (click)="onClickHome()" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}" [ngClass]="
+                    {'active' : isActiveHome}">Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="onClickAbout()" routerLinkActive="active" [ngClass]="
+                    {'active' : isActiveAbout}">About </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" (click)="onClickSkills()" routerLinkActive="active" [ngClass]="
+                    {'active' : isActiveSkills}">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="onClickEducation()" routerLinkActive="active" [ngClass]="
+                    {'active' : isActiveEducation}">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="onClickContact()" routerLinkActive="active" [ngClass]="
+                {'active' : isActiveContact}">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

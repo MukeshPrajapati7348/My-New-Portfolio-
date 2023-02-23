@@ -1,0 +1,92 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    background: rgb(206, 207, 234);
+    // box-shadow: 0 0 200px #e0dcdc inset;
+
+    
+    .main-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        // height: 80%;
+        // margin-top: 20px;
+
+        .myimage {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            
+            img{
+                width: 70%;
+                // height: 100%;
+                border-radius: 50%;
+                // filter: blur(2px);
+                // background-image: url('../../assets/Images/devops-gdec8e6fe3_1920.jpg');
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                // // background-attachment: fixed;
+                // background-position: center;
+            }
+        }
+        
+        .welcome-text {
+            width: 40%;
+            padding-left: 30px;
+
+
+            .myname, .salutation-text{
+                font-weight: bold;
+                font-size: 40px;
+                margin: 0px !important;
+            }
+
+            .skills {
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .about-btn {
+                border-radius: 20px;
+                padding: 5px 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .container {
+    
+        .main-content {
+            
+            .welcome-text {
+                transform: translate(-50%, -50%);
+                width: 80%;
+                padding: 5px;
+
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+    .container {
+    
+        .main-content {
+            
+            .welcome-text {
+                width: 90%;
+                font-size: 18;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,110 @@
+.ft_f {
+    color: #8eb6d6;
+    font-family: 'texgyreadventorbold';
+}
+.form-control1 {
+    height: 46px !important;
+}
+
+.imp-note2 {
+    padding-bottom: 25px;
+}
+
+.header-top ul.top-nav li a {
+    color: #FFF;
+}
+
+.footer .bottom {
+    display: block;
+    padding: 0px 0;
+    background: #2e5f85;
+}
+
+.login {
+    border: 1px solid #ff9600;
+    background: #ff9600;
+}
+
+.search {
+    padding: 30px 10px 10px 10px;
+}
+
+#search input {
+    height: 45px;
+}
+
+.btn_center {
+    padding-left: 150px;
+}
+
+.button {
+    background: #17a43b;
+}
+
+.panel21 {
+    background: #2c97ea;
+}
+
+.panel2 {
+    background: #ff9600;
+}
+
+.panel1 {
+    padding: 15px 15px;
+    color: #000;
+}
+
+.marquee-para a {
+    color: blue;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+    .marquee-para a:hover {
+        color: red;
+    }
+
+.marquee-para {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 5px;
+}
+
+.panel3 {
+    background: #2c97ea;
+}
+
+.marquee-para1 {
+    padding: 0px 15px;
+}
+
+.custom-tbl-degn thead tr th {
+    background: #000 !important;
+    color: #fff;
+}
+
+.main-heading1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 0px 0px 0px;
+    color: #e8322e;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+.line {
+    font-family: 'Alegreya Sans', sans-serif;
+    border-bottom: 1px dashed #2e9e88;
+    margin: 20px 0px 15px 0px;
+    padding: 0px 0px 10px 0px;
+    color: #2e9e88;
+    font-size: 28px;
+    position: relative;
+}
+
+
+
+
