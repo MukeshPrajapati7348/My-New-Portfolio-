@@ -5,66 +5,80 @@
     </div>
     <!-- <hr> -->
 
-    <div class="contact-details ">
+    <!-- Contact details -->
+    <div class="contact-details">
         <div class="contact-media">
             <div class="profile-image reveal">
-                <img src="../../assets/Images/IMG20220909100435.jpg" alt="">
+                <img src="../../assets/Images/IMG20220909100435.jpg" alt="" />
             </div>
             <div class="social-media reveal">
                 <a href="https://www.instagram.com/immukeshprajapati" target="_blank"><img
-                        src="../../assets/social media/insta.png" alt="Instagram"></a>
+                        style="width: 30px; margin-top: 5px" src="../../assets/social media/instagram.png"
+                        alt="Instagram" /></a>
                 <a href="https://www.linkedin.com/in/mukesh-prajapati-16a919195" target="_blank"><img
-                        src="../../assets/social media/linkedIn.png" alt="Linkedin" style="border: 5px solid #fff;"></a>
-                <a href="https://twitter.com/MukeshP10524955" target="_blank"> <img
-                        src="../../assets/social media/twitter.png" alt="Twitter"></a>
+                        src="../../assets/social media/linkedIn.png" alt="Linkedin"
+                        style="border: 5px solid #fff" /></a>
+                <a href="https://twitter.com/MukeshP10524955" target="_blank">
+                    <img src="../../assets/social media/twitter.png" alt="Twitter" /></a>
+
+                <a href="https://github.com/MukeshPrajapati7348" target="_blank">
+                    <img src="../../assets/social media/GitHub-Mark.png" alt="github" /></a>
             </div>
         </div>
-
+        <!-- required form fields to contact us -->
         <div class="contact-form my-3">
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="name">
                     <div class="fname reveal">
                         <label for="fname">First Name</label>
-                        <input type="text" class="form-control"
-                            [ngClass]="(f['fName'].touched || submitted) && f['fName'].errors ? 'is-invalid' : 'is-valid' "
-                            placeholder="First Name" formControlName="fName">
+                        <input type="text" class="form-control" [ngClass]="
+                (f['fName'].touched || submitted) && f['fName'].errors
+                  ? 'is-invalid'
+                  : 'is-valid'
+              " placeholder="First Name" formControlName="fName" />
                         <p *ngIf="(f['fName'].touched || submitted) && f['fName'].errors" class="is-invalid">
-                            First name is required</p>
+                            First name is required
+                        </p>
                     </div>
                     <div class="lname reveal">
                         <label for="fname">Last Name</label>
-                        <input type="text" class="form-control"
-                            [ngClass]="(f['lName'].touched || submitted) && f['lName'].errors ? 'is-invalid' : 'is-valid' "
-                            placeholder="Last Name" formControlName="lName">
+                        <input type="text" class="form-control" [ngClass]="
+                (f['lName'].touched || submitted) && f['lName'].errors
+                  ? 'is-invalid'
+                  : 'is-valid'
+              " placeholder="Last Name" formControlName="lName" />
                         <p *ngIf="(f['lName'].touched || submitted) && f['lName'].errors" class="is-invalid">
-                            Last name is required</p>
+                            Last name is required
+                        </p>
                     </div>
                 </div>
                 <div class="email reveal">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control"
-                        [ngClass]="(f['email'].touched || submitted) && f['email'].errors ? 'is-invalid' : 'is-valid' "
-                        placeholder="Email" formControlName="email">
+                    <input type="email" class="form-control" [ngClass]="
+              (f['email'].touched || submitted) && f['email'].errors
+                ? 'is-invalid'
+                : 'is-valid'
+            " placeholder="Email" formControlName="email" />
                     <p *ngIf="(f['email'].touched || submitted) && f['email'].errors" class="is-invalid">
-                        Email is required</p>
+                        Email is required
+                    </p>
                 </div>
                 <div class="msg reveal">
                     <legend>Message</legend>
-                    <textarea name="msg" rows="2" placeholder="Message..."
-                        [ngClass]="(f['message'].touched || submitted) && f['message'].errors ? 'is-invalid' : 'is-valid' "
-                        class="form-control" formControlName="message">
-                    </textarea>
+                    <textarea name="msg" rows="2" placeholder="Message..." [ngClass]="
+              (f['message'].touched || submitted) && f['message'].errors
+                ? 'is-invalid'
+                : 'is-valid'
+            " class="form-control" formControlName="message">
+          </textarea>
                     <p *ngIf="(f['message'].touched || submitted) && f['message'].errors" class="is-invalid">
-                        Message is required</p>
-
+                        Message is required
+                    </p>
                 </div>
                 <div class="submit-btn mt-3 reveal">
                     <button class="btn" type="submit">Send</button>
                 </div>
             </form>
-
         </div>
     </div>
-
-
 </div>
