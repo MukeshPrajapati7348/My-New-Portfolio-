@@ -40,7 +40,7 @@
                             First name is required
                         </p>
                     </div>
-                    <div class="lname reveal">
+                    <div class="lname">
                         <label for="fname">Last Name</label>
                         <input type="text" class="form-control" [ngClass]="
                 (f['lName'].touched || submitted) && f['lName'].errors
@@ -52,7 +52,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="email reveal">
+                <div class="email">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" [ngClass]="
               (f['email'].touched || submitted) && f['email'].errors
